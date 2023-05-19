@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* NAV ENTERO */
+  min-height: 150px;
+  width: auto;
+}
+
+.parte_izquierda_nav {
+  /* DIV QUE CONTIENE LOGO Y NOMBRE */
+  margin-left: -50px;
+}
+
+nav img {
+  height: 130px;
+  width: auto;
+}
+
+.a1beats {
+  font-size: 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paginas a {
+  /* EN EL DIV DE LOS ENLACES */
+  margin-right: 30px;
+  font-size: 22px;
+}
+
+main {
+  background-color: rgba(144, 0, 0, 0.943);
+  min-height: 350px;
+  border-bottom: 1px solid rgb(144, 0, 0);
+}
+
+main h2 {
+  font-size: 20px;
+  color: rgb(255, 249, 241);
+  padding: 35px;
+}
+
+.foto_index {
+  height: 200px;
+  margin-top: 40px;
+}
+
+.fotos_index {
+  display: flex;
+}
+
+.marcas {
+  height: 500px;
+  width: auto;
+}
+
+.cartas_generos {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.cartas_generos .card {
+  width: 280px;
+  margin-bottom: 60px;
+}
+
+.tupac {
+  height: 185px;
+}
+
+.travis {
+  height: 185px;
+}
+
+.feid {
+  height: 190px;
+}
+
+.popsmoke {
+  height: 190px;
+}
+
+.foto_a1 {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(61, 61, 61);
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+aside {
+  background-color: rgba(144, 0, 0, 0.782);
+}
+
+.video_workflow {
+  height: 300px;
+  margin: 20px;
+  border: 4px solid rgba(144, 0, 0, 0.943);
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pack {
+  height: 500px;
+  background-color: white;
+  border: 4px solid rgba(144, 0, 0, 0.73);
+}
+
+.packentero {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.packentero h2 {
+  margin-top: 150px; /* O ajusta el margen superior según tus necesidades */
+}
+
+.foto_a1 {
+  display: block; /* Asegura que las imágenes se muestren como elementos de bloque */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  margin-bottom: 50px; /* Agrega espacio entre las imágenes */
+  margin-top: 20px;
+  border-radius: 50%; /* Da forma circular a las imágenes */
+  width: 300px; /* Ajusta el ancho de las imágenes según tus necesidades */
+  height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
+}
+
+.foto_a2 {
+  display: block; /* Asegura que las imágenes se muestren como elementos de bloque */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  margin-bottom: 50px; /* Agrega espacio entre las imágenes */
+  border-radius: 50%; /* Da forma circular a las imágenes */
+  width: 300px; /* Ajusta el ancho de las imágenes según tus necesidades */
+  height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
+}
+
+.fotos_index {
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=estilos.css.map */

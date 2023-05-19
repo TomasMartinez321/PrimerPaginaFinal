@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- linkeo bootstrap al css empieza -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- linkeo bootstrap al css empieza -->
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACION EMPIEZA -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Logo y nombre -->
+        <div class="parte_izquierda_nav">
+            <img src="images/plantilla-logo-a1.png" alt="logo">
+            <a class="navbar-brand a1beats" href="#">A1 Beats</a>
+        </div>
+        <!-- Boton colapsable -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Paginas del nav -->
+        <div class="collapse navbar-collapse paginas" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/quien_soy.html">¿Quien soy?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/como_trabajo.html">¿Como trabajo?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Servicios
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="pages/servicios_pack.html">PACKS</a>
+                        <a class="dropdown-item" href="pages/servicios_productos.html">PRODUCTOS</a>
+                        <a class="dropdown-item" href="pages/servicios_asesorias.html">ASESORIAS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/catalogo.html">Catalogo de beats</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- BARRA DE NAVEGACION TERMINA -->
+
+    <!--     MAIN ORGANIZADO CON REJILLAS DE BOOTSTRAP -->
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Nos ocupamos de potenciar a los artistas a traves de los servicios que ofrecemos para que tengan su
+                    cancion en condiciones con un respectivo contenido visual, con nuestra formacion los ayudamos a que
+                    sepan que hacer con esa cancion ademas de como protegerla al igual que todo su arte, como
+                    compartirlo y difundirlo... basicamente ofrecemos todos los servicios que engoblan lo que necesita
+                    un artista en un mismo lugar. Tambien a traves de nuestros contactos, colegas y amigos generamos
+                    relaciones y ayudamos a que personas afines puedan trabajar en equipo si encuentran un objetivo en
+                    comun. <br><br>
+                    Trabajando con nosotros no solo van a tener musica de calidad, sino que van a volverse mejores
+                    artistas de lo que eran antes de conocernos... eso sin contar la compañia de un equipo de personas
+                    comprometidas, dedicadas y que les apasiona la musica. <br><br><br>
+                    Hacemos beats, servicios de grabacion, mezcla, mastering, grabacion de videos. Ofrecemos
+                    asesoramiento de composicion musical: canto y escritura, de publicidad: marketing y desarollo de
+                    marca personal. Informamos acerca de ciertos procesos del negocio e industria musical para que los
+                    artistas tengan mayor discernimiento dentro del mundo que se mueven y tengan las herramientas para
+                    desarrollar estrategias, planificaciones y negocios de manera inteligente. Tambien organizamos
+                    eventos shows y fiestas que sumen a la cultura artistica actual y generamos relaciones entre
+                    nuestros contactos de beneficio y ayuda mutua.
+                </h2>
+            </div>
+            <div class="col-md-6">
+                <div class="fotos_index">
+                    <img class="foto_index" src="images/estudio1.jpg" alt="estudio1">
+                    <img class="foto_index" src="images/estudio3.jpg" alt="estudio3">
+                </div>
+                <img class="marcas" src="images/marcas.png" alt="marcas">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>TODOS LOS DERECHOS REGISTRADOS ©. <br>
+            El uso de algun beat sin autorización por parte de "A1 Beats" sera bajado de las plataformas digitales y
+            posiblemente penalizado. <br>
+            Consulte por los beats GRATIS y/o de USO LIBRE a través de los diversos métodos de contacto.</p>
+    </footer>
+
+    <!-- javascript de bootstrap empieza -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+    <!-- javascript de bootstrap termina -->
+</body>
+
+</html>
