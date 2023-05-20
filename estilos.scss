@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/* Fuentes */
+
+@font-face {
+    font-family: morden;
+    src: url(fonts/Morden.otf);
+}
+@font-face {
+    font-family: ponzi;
+    src: url(fonts/Ponzi\ Hat.otf);
+}
+
+
+/* Variables */
+$color1: rgba(144, 0, 0, 0.943);
+$color2: rgba(144, 0, 0, 0.782);
+$color-letra: rgb(255, 249, 241);
+$color-bordes: rgba(144, 0, 0, 0.73);
+
+$fuente1: 'morden', sans-serif;
+$fuente2: 'ponzi', sans-serif;
+
+/* Estilos y reglas CSS */
 .navbar {
     /* NAV ENTERO */
     min-height: 150px;
@@ -34,10 +56,11 @@ nav {
     /* EN EL DIV DE LOS ENLACES */
     margin-right: 30px;
     font-size: 22px;
+    font-family: $fuente1
 }
 
 main {
-    background-color: rgba(144, 0, 0, 0.943);
+    background-color: $color1;
     min-height: 350px;
     border-bottom: 1px solid rgb(144, 0, 0);
 
@@ -45,7 +68,7 @@ main {
 
 main h2 {
     font-size: 20px;
-    color: rgb(255, 249, 241);
+    color: $color-letra;
     padding: 35px;
 
 }
@@ -56,7 +79,7 @@ main h2 {
 }
 
 .fotos_index{
-    display: flex 
+    display: flex ;
     
 }
 .marcas {
@@ -110,13 +133,13 @@ footer p {
 }
 
 aside {
-    background-color: rgba(144, 0, 0, 0.782);
+    background-color: $color2;
 }
 
 .video_workflow {
     height: 300px;
     margin: 20px;
-    border: 4px solid rgb(144, 0, 0, 0.943);
+    border: 4px solid $color-bordes;
 }
 
 .video-container {
@@ -132,9 +155,9 @@ aside {
 }
 
 .pack{
-    height: 500px; 
-    background-color: white;
-    border: 4px solid rgba(144, 0, 0, 0.73) ;
+    height: 400px; 
+    border: 4px solid $color-bordes;
+    margin-right: 20px;
 }
 
 .packentero{
@@ -155,6 +178,10 @@ aside {
     width: 300px; /* Ajusta el ancho de las imágenes según tus necesidades */
     height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
     object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .foto_a2{
@@ -165,6 +192,10 @@ aside {
     width: 300px; /* Ajusta el ancho de las imágenes según tus necesidades */
     height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
     object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .fotos_index {
