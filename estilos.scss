@@ -10,6 +10,7 @@
     font-family: morden;
     src: url(fonts/Morden.otf);
 }
+
 @font-face {
     font-family: ponzi;
     src: url(fonts/Ponzi\ Hat.otf);
@@ -19,22 +20,81 @@
 /* Variables */
 $color1: rgba(144, 0, 0, 0.943);
 $color2: rgba(144, 0, 0, 0.782);
+$color3: rgb(65, 65, 65);
 $color-letra: rgb(255, 249, 241);
 $color-bordes: rgba(144, 0, 0, 0.73);
+$color-bordes2: rgba(251, 0, 0, 0.73);
 
-$fuente1: 'morden', sans-serif;
-$fuente2: 'ponzi', sans-serif;
+$fuente1: 'morden',
+sans-serif;
+$fuente2: 'ponzi',
+sans-serif;
 
 /* Estilos y reglas CSS */
 .navbar {
     /* NAV ENTERO */
-    min-height: 150px;
+    min-height: 20px;
     width: auto;
 }
 
 .parte_izquierda_nav {
     /* DIV QUE CONTIENE LOGO Y NOMBRE */
-    margin-left: -50px;
+    margin-left: 10px;
+
+}
+
+/*         SCALE DE LOGO TERMINA  */
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.logo-container:hover img {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+/*         SCALE DE LOGO TERMINA  */
+
+.logo-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    animation: spin 10s infinite;
+    transform-style: preserve-3d;
+    margin-top: 41px ;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    5% {
+        transform: rotateY(3600deg);
+    }
+
+    25% {
+        transform: rotateY(0deg);
+    }
+
+    33.33%,
+    100% {
+        transform: rotateY(0deg);
+    }
 }
 
 nav img {
@@ -59,6 +119,30 @@ nav {
     font-family: $fuente1
 }
 
+.titulos {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 40px;
+}
+
+.titulo-pack {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.titulo-genero {
+    font-size: 25px;
+}
+
+@media (max-width: 767px) {
+    .packentero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid $color-bordes2;
+    }
+}
+
 main {
     background-color: $color1;
     min-height: 350px;
@@ -73,15 +157,16 @@ main h2 {
 
 }
 
-.foto_index{
-    height: 200px; 
+.foto_index {
+    height: 200px;
     margin-top: 40px;
 }
 
-.fotos_index{
-    display: flex ;
-    
+.fotos_index {
+    display: flex;
+
 }
+
 .marcas {
 
     height: 500px;
@@ -146,53 +231,66 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.video-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.pack{
-    height: 400px; 
+.pack {
+    height: 400px;
     border: 4px solid $color-bordes;
     margin-right: 20px;
 }
 
-.packentero{
+.packentero {
     display: flex;
     margin-bottom: 5px;
 }
 
 .packentero h2 {
-    margin-top: 150px; /* O ajusta el margen superior según tus necesidades */
+    margin-top: 150px;
+    /* O ajusta el margen superior según tus necesidades */
 }
 
-.foto_a1{
-    display: block; /* Asegura que las imágenes se muestren como elementos de bloque */
-    margin: 0 auto; /* Centra las imágenes horizontalmente */
-    margin-bottom: 50px; /* Agrega espacio entre las imágenes */
+.foto_a1 {
+    display: block;
+    /* Asegura que las imágenes se muestren como elementos de bloque */
+    margin: 0 auto;
+    /* Centra las imágenes horizontalmente */
+    margin-bottom: 50px;
+    /* Agrega espacio entre las imágenes */
     margin-top: 20px;
-    border-radius: 50%; /* Da forma circular a las imágenes */
-    width: 300px; /* Ajusta el ancho de las imágenes según tus necesidades */
-    height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
-    object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
+    border-radius: 50%;
+    /* Da forma circular a las imágenes */
+    width: 300px;
+    /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: 300px;
+    /* Ajusta la altura de las imágenes según tus necesidades */
+    object-fit: cover;
+    /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
     transition: transform 0.3s ease;
+
     &:hover {
         transform: scale(1.1);
     }
 }
 
-.foto_a2{
-    display: block; /* Asegura que las imágenes se muestren como elementos de bloque */
-    margin: 0 auto; /* Centra las imágenes horizontalmente */
-    margin-bottom: 50px; /* Agrega espacio entre las imágenes */
-    border-radius: 50%; /* Da forma circular a las imágenes */
-    width: 300px; /* Ajusta el ancho de las imágenes según tus necesidades */
-    height: 300px; /* Ajusta la altura de las imágenes según tus necesidades */
-    object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
+.foto_a2 {
+    display: block;
+    /* Asegura que las imágenes se muestren como elementos de bloque */
+    margin: 0 auto;
+    /* Centra las imágenes horizontalmente */
+    margin-bottom: 50px;
+    /* Agrega espacio entre las imágenes */
+    border-radius: 50%;
+    /* Da forma circular a las imágenes */
+    width: 300px;
+    /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: 300px;
+    /* Ajusta la altura de las imágenes según tus necesidades */
+    object-fit: cover;
+    /* Ajusta el tamaño de la imagen para llenar el contenedor circular */
     transition: transform 0.3s ease;
+
     &:hover {
         transform: scale(1.2);
     }
@@ -202,4 +300,3 @@ aside {
     display: flex;
     flex-wrap: wrap;
 }
-
