@@ -16,6 +16,11 @@
     src: url(fonts/Ponzi\ Hat.otf);
 }
 
+@font-face {
+    font-family: akira;
+    src: url(fonts/Akira\ Expanded\ Demo.otf);
+}
+
 
 /* Variables */
 $color1: rgba(144, 0, 0, 0.943);
@@ -29,8 +34,11 @@ $fuente1: 'morden',
 sans-serif;
 $fuente2: 'ponzi',
 sans-serif;
+$fuente3: 'akira',
+sans-serif;
 
 /* Estilos y reglas CSS */
+
 .navbar {
     /* NAV ENTERO */
     min-height: 20px;
@@ -43,7 +51,7 @@ sans-serif;
 
 }
 
-/*         SCALE DE LOGO TERMINA  */
+/*         SCALE DE LOGO EMPIEZA  */
 
 .logo-container {
     position: relative;
@@ -57,6 +65,8 @@ sans-serif;
 }
 
 /*         SCALE DE LOGO TERMINA  */
+
+/* MOVIMIENTO DE LOGO EMPIEZA */
 
 .logo-container {
     width: 200px;
@@ -97,6 +107,8 @@ sans-serif;
     }
 }
 
+/* MOVIMIENTO DE LOGO TERMINA */
+
 nav img {
     height: 130px;
     width: auto;
@@ -104,6 +116,7 @@ nav img {
 
 .a1beats {
     font-size: 35px;
+    font-family: $fuente2;
 }
 
 nav {
@@ -114,9 +127,11 @@ nav {
 
 .paginas a {
     /* EN EL DIV DE LOS ENLACES */
-    margin-right: 30px;
-    font-size: 22px;
-    font-family: $fuente1
+    margin-top: -4px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: $fuente3
+    
 }
 
 .titulos {
@@ -132,6 +147,13 @@ nav {
 
 .titulo-genero {
     font-size: 25px;
+}
+
+.titulo-work{
+    color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -164,25 +186,36 @@ main h2 {
 
 .fotos_index {
     display: flex;
+    
 
 }
 
 .marcas {
-
     height: 500px;
-    width: auto;
-
+    width: 100%;
+    margin-top: 40px;
+    /*  MARGIN MOMENTANEO */
 }
 
 .cartas_generos {
     display: flex;
     justify-content: space-between;
     padding: 40px;
+    
 
     .card {
         width: 280px;
         margin-bottom: 60px; // Espacio entre las líneas de las tarjetas
     }
+}
+
+@media (max-width: 768px) {
+    .cartas_generos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
 }
 
 .tupac {
@@ -201,11 +234,44 @@ main h2 {
     height: 190px;
 }
 
+.boton:hover{
+    background-color: $color3;
+}
+
 .foto_a1 {
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centrar verticalmente los elementos */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+.redes a{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(144, 0, 0);
+    width: 60px;
+    height: 60px;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Ajusta el margen horizontal según tus necesidades */
+    box-shadow: 2px 2px 2px black;
+    transition: all .4s ease-in-out;
+}
+
+.redes a:hover{
+    transform: scale(1.2);
+    background-color: $color3;
 }
 
 footer {
@@ -217,14 +283,17 @@ footer p {
     color: white;
 }
 
+
+
 aside {
     background-color: $color2;
 }
 
-.video_workflow {
+.video_workflow {    
     height: 300px;
+    width:100%;
     margin: 20px;
-    border: 4px solid $color-bordes;
+/*     border: 4px solid $color-bordes; */
 }
 
 .video-container {
@@ -237,6 +306,7 @@ aside {
 
 .pack {
     height: 400px;
+    width: 100%;
     border: 4px solid $color-bordes;
     margin-right: 20px;
 }
@@ -299,4 +369,6 @@ aside {
 .fotos_index {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 55px;
+/*     MARGIN MOMENTANEO */
 }
