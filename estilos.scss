@@ -165,6 +165,10 @@ nav {
     }
 }
 
+#bienvenida{
+    margin-top: 40px;
+}
+
 main {
     background-color: $color1;
     min-height: 350px;
@@ -186,7 +190,9 @@ main h2 {
 
 .fotos_index {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    height: 50%;
 
 }
 
