@@ -133,6 +133,10 @@ nav {
     border: 5px solid rgba(251, 0, 0, 0.73);
   }
 }
+#bienvenida {
+  margin-top: 40px;
+}
+
 main {
   background-color: rgba(144, 0, 0, 0.943);
   min-height: 350px;
@@ -152,6 +156,9 @@ main h2 {
 
 .fotos_index {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
 }
 
 .marcas {
